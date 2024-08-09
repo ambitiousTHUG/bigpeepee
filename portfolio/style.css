@@ -1,0 +1,175 @@
+body {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4B0082; /* Dark Purple */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li .dropdown:hover > a {
+    background: #8A2BE2; /* Blue Violet */
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #6A0DAD; /* Royal Purple */
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.title-container {
+    padding: 50px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #9370DB; /* Medium Purple */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #7B68EE; /* Medium Slate Blue */
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.intro img {
+    flex: 1;
+    max-width: 50%;
+    padding: 10px;
+}
+
+.intro-text {
+    flex: 1;
+    padding: 10px;
+}
+
+.news-item {
+    margin-bottom: 15px;
+}
+
+.news-item h3 {
+    margin: 0;
+}
+
+.news-item p {
+    margin: 5px 0;
+}
+
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video-section video {
+    flex: 1;
+    max-width: 50%;
+    padding: 10px;
+}
+
+.video-text {
+    flex: 1;
+    padding: 10px;
+}
+
+footer {
+    background: #4B0082; /* Dark Purple */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .contact-info a {
+    color: #9370DB; /* Medium Purple */
+    text-decoration: none;
+}
+
+footer .contact-info a:hover {
+    color: #7B68EE; /* Medium Slate Blue */
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer .social-media a:hover {
+    color: #9370DB; /* Medium Purple */
+}
+
+@media (max-width: 768px) {
+    .intro,
+    .video-section {
+        flex-direction: column;
+    }
+
+    .intro img,
+    .video-section video {
+        max-width: 100%;
+    }
+
+    .cta-button {
+        display: block;
+        width: fit-content;
+        margin: 20px auto;
+    }
+}

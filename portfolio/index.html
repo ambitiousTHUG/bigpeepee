@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THUBah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="news.html">News</a></li>
+                <!-- <li><a href="articles.html">Articles</a></li> -->
+                <!-- <li class="dropdown"> -->
+                    <!-- <a href="#">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="finishedprojects.html">Finished Projects</a></li>
+                        <li><a href="pendingprojects.html">Pending Projects</a></li>
+                        <li><a href="uploadproject.html">Upload Project</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="subscribe.html" class="subscribe-button">Subscribe</a></li>
+            </ul>
+        </nav>
+        <div class="title-container">
+            <h1>tHUBah</h1>
+            <p>Your go-to platform for the latest in scientific news and open-source projects. Join our community today!</p>
+            <a href="subscribe.html" class="cta-button">Join Us Now</a>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <img src="semiconductor-1-1024.png" alt="Intro Image">
+            <div class="intro-text">
+                <h2>Breakthrough in Diode Technology</h2>
+                <p class="card-text">Researchers have developed a new type of diode that significantly improves energy efficiency. This breakthrough in semiconductor technology utilizes novel materials and design principles to achieve higher performance and lower energy consumption compared to traditional diodes. The innovative diode promises to enhance the efficiency of a wide range of electronic devices, from consumer electronics to industrial applications. By reducing power losses and improving thermal management, this new diode could lead to more sustainable and cost-effective technologies. <a href="#">Read more...</a></p>
+            </div>
+        </section>
+        <section class="video-section">
+            <video controls>
+                <source src="welcome vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-text">
+                <h2>Explore Our Projects</h2>
+                <p>Watch our introductory video to learn more about our mission and how you can contribute.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Contact us: <a href="mailto:thubah7@gmail.com">thubah7@gmail.com</a> | +79365050901</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/tee_mas747/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61562803956770"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/89365050901"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/ambitiousTHUG"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.dropdown').hover(function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
+            }, function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://example.com/silicon-wafer.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background: rgba(75, 0, 130, 0.7); /* Dark Purple with transparency */
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.login-button {
+    background: #9370DB; /* Medium Purple */
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.login-button:hover {
+    background: #7B68EE; /* Medium Slate Blue */
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: black;
+    padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+    background: rgba(75, 0, 130, 0.1); /* Light Purple with transparency */
+    color: #4B0082; /* Dark Purple */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+}

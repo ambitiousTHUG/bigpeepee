@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Specifies the document type and language -->
+<head>
+    <!-- Linking an external CSS file for custom styles -->
+    <link rel="stylesheet" href="projects.css">
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Setting the viewport to make the web page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page that appears on the browser tab -->
+    <title>Dropdown Menu Example</title>
+    <!-- Linking the Bootstrap CSS library for styling and responsive design -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Linking another external CSS file for additional custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation bar using Bootstrap classes for styling and responsiveness -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Brand name of the website -->
+            <a class="navbar-brand" href="#">THUBah</a>
+            <!-- Button for toggling the navigation menu on smaller screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible part of the navigation bar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navigation menu items aligned to the right using 'ml-auto' -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                    <!-- Hamburger dropdown menu item -->
+                    <li class="nav-item dropdown">
+                        <!-- Dropdown toggle button -->
+                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span> Projects
+                        </a>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                            <a class="dropdown-item" href="#">Solved Projects</a>
+                            <a class="dropdown-item" href="#">Unsolved Projects</a>
+                            <a class="dropdown-item" href="#">Leave a Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link login-button" href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Including the jQuery library for DOM manipulation and Bootstrap JS dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript for additional functionality -->
+    <script>
+        // Ensuring the code runs after the document is fully loaded
+        $(document).ready(function() {
+            // Adding hover effect to dropdown menus
+            $('.dropdown').hover(function() {
+                // On mouse enter, slide down the dropdown menu
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
+            }, function() {
+                // On mouse leave, slide up the dropdown menu
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
+            });
+        });
+    </script>
+</body>
+</html>
